@@ -1,0 +1,41 @@
+.botonSecundario {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.opinion-item {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    list-style: none;
+    border-left: 4px solid #ffae00;
+}
+
+.detalle-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detalle-imagen {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
