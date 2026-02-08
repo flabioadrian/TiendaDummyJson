@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="styless.css"></link>
+    <link rel="stylesheet" href="dashBoardAdmin.css"></link>
+</head>
+<body>
+    <header>
+        <h1>DashBoard Admin</h1>
+        <div class="barra-herramientas">
+        <div class="grupo-filtros">
+            <input type="text" placeholder="Buscar" class="barraBusqueda" id="busqueda" onchange="resetearFiltros()">
+            <button onclick="handlerLoaderSearch()" class="botonPrincipal">Buscar</button>
+            <select id="categorias" onchange="filtrarPorCategoria()">
+                <option value="">Todas las categorías</option>
+            </select>
+            <select id="ordenarPor" onchange="aplicarOrdenamiento()">
+                <option value="">Seleccionar categoria</option>
+                <option value="rating-desc">Puntuación: Mayor a Menor</option>
+                <option value="rating-asc">Puntuación: Menos a Mayor</option>
+                <option value="title-asc">Título (A-Z)</option>
+                <option value="title-desc">Título (Z-A)</option>
+                <option value="price-asc">Precio (Menor a Mayor)</option>
+                <option value="price-desc">Precio (Mayor a Menor)</option>
+            </select>
+        </div>
+        <a href="addProduct.html" class="boton-nuevo">Nuevo Producto</a>
+    </div>
+    </header>
+    <main id="main">
+        <h2>Productos</h2>
+        <section id="muro">
+        </section>
+        <div class="navegacion">
+            <button onclick="actualizarPagina(-1)">Ant</button>
+            <div id="paginaActual"></div>
+            <button onclick="actualizarPagina(1)">Sig</button>
+        </div>
+    </main>
+    <script src="backendAdmin.js"></script>
+</body>
+</html>

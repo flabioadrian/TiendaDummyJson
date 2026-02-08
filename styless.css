@@ -68,3 +68,87 @@ header input{
 .barraBusqueda {
     margin-right: 10px;
 }
+
+.botonPrincipal {
+    background-color: #ffb327;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botonPrincipal:hover {
+    background-color: #b38022;
+}
+
+.botonSecundario {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.formulario {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.formulario input, 
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario .botonPrincipal{
+    background-color: #ffb327;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formulario .botonPrincipal:hover {
+    background-color: #624000;
+}
+
+.formulario .botonSecundario{
+    background-color: #a4a4a4d1;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formulario .botonSecundario:hover {
+    background-color: #ac7000;
+}
+
+.mensajePrincipal {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}

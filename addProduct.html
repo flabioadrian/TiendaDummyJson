@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Productos</title>
+    <link rel="stylesheet" href="styless.css"></link>
+    <link rel="stylesheet" href="dashBoardAdmin.css"></link>
+</head>
+<body>
+    <header>
+        <h1>DashBoard Admin</h1>
+        <a href="dashBoardAdmin.html" class="botonPrincipal">Productos</a>
+        <a href="addProduct.html" class="boton-nuevo">Nuevo Producto</a>
+    </header>
+    <main>
+        <button onclick="window.history.back()" class="botonSecundario">Volver atrás</button>
+        <div id="formulario" class="formulario">
+        <label for="productName">Nombre del Producto:</label><br>
+        <input type="text" id="productName" name="productName" required><br><br>
+
+        <label for="productPrice">Precio:</label><br>
+        <input type="number" id="productPrice" name="productPrice" placeholder="0.00" step="0.01" min="0"><br><br>
+        <label for="productCategory">Categoría:</label><br>
+        <select id="categorias"></select><br><br>
+
+        <label for="productdescription">Descripción:</label><br>
+        <input type="text" id="productdescription" name="productdescription" required><br><br>
+        
+        <button onclick="crearProducto()" class="botonPrincipal">Agregar Producto</button>
+        <button onclick="cancelar()" class="botonSecundario">Cancelar</button>
+        <div id="mensaje" class="mensajePrincipal" style="display: none;"></div>
+        </div>
+    </main>
+    <script src="agregar.js"></script>
+</body>
+</html>
